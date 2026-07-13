@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root {
+  color-scheme: dark;
+  --bg-primary: #050507;
+  --bg-secondary: #09070f;
+  --bg-tertiary: #100c19;
+  --bg-panel: rgba(17, 13, 27, .72);
+  --bg-panel-strong: rgba(6, 5, 10, .5);
+  --bg-glass: rgba(255, 255, 255, .055);
+  --text-primary: #f4f0ff;
+  --text-secondary: #d7c9ff;
+  --text-muted: #aea4c2;
+  --text-dim: rgba(244, 240, 255, .62);
+  --purple: #a970ff;
+  --purple-deep: #5c2ec9;
+  --purple-soft: #c9a6ff;
+  --violet-light: #b186ff;
+  --sapphire-light: #73b6ff;
+  --emerald-light: #80f5d2;
+  --crimson-light: #ff6bbd;
+  --gold-bright: #ffd88a;
+  --gold-mid: #c99b45;
+  --danger: #ff6bbd;
+  --success: #80f5d2;
+  --border-soft: rgba(177, 134, 255, .15);
+  --border-standard: rgba(177, 134, 255, .12);
+  --border-strong: rgba(198, 150, 255, .34);
+  --shadow-soft: 0 16px 48px rgba(0, 0, 0, .24);
+  --shadow-premium: 0 24px 80px rgba(0, 0, 0, .56);
+  --glow-purple: 0 0 24px rgba(122, 60, 255, .18);
+  --glow-strong: 0 0 36px rgba(156, 91, 255, .28);
+  --violet-glow: 0 0 28px rgba(177, 134, 255, .22);
+  --sapphire-glow: 0 0 28px rgba(115, 182, 255, .2);
+  --emerald-glow: 0 0 28px rgba(128, 245, 210, .18);
+  --crimson-glow: 0 0 28px rgba(255, 107, 189, .2);
+  --gold-glow: 0 0 28px rgba(255, 216, 138, .18);
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --radius: var(--radius-lg);
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 72px;
+  --font-display: Cinzel, Georgia, serif;
+  --font-body: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --blur-glass: blur(18px);
+  --blur-sidebar: blur(22px);
+  --sidebar-width: 286px;
+  --z-bg: -3;
+  --z-base: 1;
+  --z-sticky: 50;
+  --z-sidebar: 80;
+  --z-skip: 100;
+  --ease-premium: cubic-bezier(.2, .8, .2, 1);
+  --transition-fast: .18s var(--ease-premium);
+  --transition-base: .22s var(--ease-premium);
+  --transition-slow: .7s var(--ease-premium);
+  --bg: var(--bg-primary);
+  --bg-soft: var(--bg-secondary);
+  --panel: var(--bg-panel);
+  --panel-solid: var(--bg-tertiary);
+  --panel-light: var(--bg-glass);
+  --line: var(--border-soft);
+  --line-strong: var(--border-strong);
+  --text: var(--text-primary);
+  --muted: var(--text-muted);
+  --soft: var(--text-secondary);
+  --violet: var(--purple-deep);
+  --shadow: var(--shadow-premium);
+  --glow: var(--glow-strong);
+  --sidebar: var(--sidebar-width);
+  --ease: var(--ease-premium);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 8% 5%, rgba(119, 54, 255, .23), transparent 34rem),
+    radial-gradient(circle at 86% 22%, rgba(188, 97, 255, .15), transparent 34rem),
+    linear-gradient(135deg, #050507 0%, #08050d 44%, #030305 100%);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-bg);
+  pointer-events: none;
+  content: "";
+  background-image:
+    linear-gradient(rgba(255, 255, 255, .025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .025) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .88), transparent 82%);
+}
+
+body::after {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  content: "";
+  opacity: .36;
+  background:
+    linear-gradient(120deg, transparent 0 30%, rgba(173, 113, 255, .06) 31%, transparent 33% 68%, rgba(173, 113, 255, .05) 69%, transparent 70%),
+    radial-gradient(circle, rgba(255, 255, 255, .055) 1px, transparent 1.5px);
+  background-size: 100% 100%, 34px 34px;
+  mix-blend-mode: screen;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img,
+svg {
+  max-width: 100%;
+}

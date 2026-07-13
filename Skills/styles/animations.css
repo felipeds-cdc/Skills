@@ -1,0 +1,72 @@
+.fx-fade,
+.reveal {
+  transform: translateY(18px);
+  opacity: 0;
+  transition: transform var(--transition-slow), opacity var(--transition-slow);
+}
+
+.fx-fade.is-visible,
+.reveal.is-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.fx-float {
+  animation: fx-float 6s var(--ease-premium) infinite;
+}
+
+.fx-glow-pulse {
+  animation: fx-glow-pulse 4.6s var(--ease-premium) infinite;
+}
+
+@keyframes fx-rotate-aura {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fx-pulse-ring {
+  0%,
+  100% {
+    opacity: .7;
+    transform: scale(1) rotate(0deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.035) rotate(4deg);
+  }
+}
+
+@keyframes fx-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes fx-glow-pulse {
+  0%,
+  100% {
+    box-shadow: var(--glow-purple);
+  }
+
+  50% {
+    box-shadow: var(--glow-strong);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
