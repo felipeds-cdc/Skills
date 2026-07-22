@@ -1,543 +1,338 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grimorio</title>
-    <link rel="stylesheet" href="styles/system.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Grimorio — versão em Aurora do template original com design system visual." />
+  <title>Grimorio</title>
+
+  <link rel="stylesheet" href="public/css/aurora.css" />
+  <link rel="stylesheet" href="public/css/aurora-sis.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap"
+    rel="stylesheet" />
+
 </head>
 
-<body>
-    <div class="bc-container">
-        <div class="bc-hero">
-            <h1 class="bc-hero__title">Meus Feitiços</h1>
+<body class="au-body au-page-shell">
+
+  <main id="main-content">
+    <section class="au-hero" aria-labelledby="hero-title" style="min-height: 78vh;">
+      <div class="au-hero__overlay" aria-hidden="true"></div>
+      <div class="au-hero__content">
+        <span class="au-reveal au-section-header__eyebrow">Coleção de Tecnicas</span>
+        <h1 id="hero-title" class="au-reveal au-h1 au-reveal--d1">Tecnicas<br />Yojutsu de Escuridão</h1>
+        <p class="au-reveal au-body-text au-reveal--d2" style="padding-top: 10px;">
+          Este atributo mágico permite ao usuário gerar e manipular a escuridão à vontade. O usuário é capaz de usar essa Yojutsu
+          sem a necessidade de um grimório. No entanto, para usá-la em seu potencial máximo, são necessárias feitiços específicos,
+          que são armazenados dentro de grimórios. <br> <br>
+
+          A Yojutsu de Escuridão foi descrita como o oposto polar da Yojutsu de Luz, e uma das propriedades fundamentais desse Yojutsu é
+          que ela tem baixa velocidade. Para combater essa desvantagem, certos magos utilizam Yojutsu de Reforço para canalizar
+          Yojutsu de Escuridão através de uma arma e aumentar seus atributos físicos. Outra característica da Yojutsu de Escuridão
+          é seu pequeno efeito gravitacional, atraindo e absorvendo magias, bem como puxar e imobilizar pessoas.
+        </p>
+        <div class="au-reveal au-reveal--d3" style="display:flex;gap:16px;flex-wrap:wrap;margin-top:2rem;">
+          <a href="#escuridão" class="au-btn au-btn--ghost">Ver Feitiços</a>
+          <a href="#stats" class="au-btn au-btn--solid">Ver Stats</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="au-section" id="escuridão" aria-labelledby="transmutacao-title">
+      <div class="au-container">
+        <div class="au-section-header au-reveal">
+          <span class="au-section-header__eyebrow">Lista de Feitiços</span>
+          <h2 id="transmutacao-title" class="au-section-header__title">Feitiços de Escuridão</h2>
+          <p class="au-section-header__body">
+            Já que se diz que o poder do submundo reside na Yojutsu de Escuridão, é um dos atributos mágicos necessários para o
+            crescimento da Árvore de Qliphoth. Por causa dessa influência do submundo, é um Yojutsu de Estágio Arcano e,
+            portanto, é eficaz contra demônios e suas Yojutsus e não pode ser manipulada pela Yojutsu de Kotodama.
+
+
+          </p>
         </div>
 
-        <section class="bc-section">
-            <p class="bc-section-label">01 — Lista de Feitiços</p>
-            <h2 class="bc-section-title">Feitiços Transmutação</h2>
-
-            <div class="bc-grid-2 mt-lg">
-                <div class="bc-card bc-card--accented bc-card--glowing card-accent-violet">
-                    <span class="attr-tag tag-violet mb-sm">Base</span>
-                    <h3 class="t-h3 mt-sm">Pagina 1 : Conversão</h3>
-                    <p class="t-ui mt-md">Este feitiço é a a manifestação mais pura, direta e versátil da Magia de Transmutação, unificando
-                        os princípios da transformação da matéria, alteração biológica e reescrita de atributos elementais. Para sua
-                        execução, o usuário estende a mão aberta na direção de um alvo específico, seja ele uma estrutura física do
-                        ambiente, um objeto inanimado, uma criatura viva ou uma magia ativa projetada por um oponente. Ao realizar esse
-                        gesto, uma nuvem invisível e cirúrgica de magia de transmutação cobre o alvo instantaneamente, envolvendo o alvo e
-                        subjugando sua assinatura mágica ou molecular. <br> <br>
-
-                        O feitiço quebra as ligações intrínsecas da matéria ou da magia mirada e as reorganiza sob o comando absoluto do
-                        usuário. Se direcionado a uma magia hostil ou ao ambiente, o feitiço pode reescrever a energia destrutiva tanto para
-                        transmutá-la em uma técnica de cura, quanto para mimetizar um feitiço complexo que o usuário tenha conhecimento, visto
-                        ou suposto a existência. Quando focado em uma forma de vida ou criatura mágica menor, o feitiço atua como um alterador
-                        biológico, transmutando o espécime em sua forma aprimorada, dotado de modificações severas de acordo com a sua evolução.
-                    </p>
-
-
-                    <div class="t-h4 mt-lg">Aplicações</div>
-                    <ul class="t-ui mt-sm">
-                        <li>Estagio : Indiferente</li>
-                        <li>Gasto : 20-60 de Mana</li>
-                        <li>Habilidade : Indiferença de Poder</li>
-                        <li>Habilidade : Regeneração Absoluta</li>
-                    </ul>
-                </div>
-
-                <div class="bc-card bc-card--accented bc-card--glowing card-accent-violet">
-                    <span class="attr-tag tag-violet mb-sm">Avançado</span>
-                    <h3 class="t-h3 mt-sm">Pagina 2 : Conversão Absoluta</h3>
-                    <p class="t-ui mt-md">Este feitiço de escala proibida eleva os limites conhecidos da transmutação ao fundir a técnica
-                        original com a influência corruptiva da mana negativa e do poder demoníaco. Para sua execução, o usuário estende a
-                        mão aberta na direção de um alvo específico — seja uma estrutura física, um objeto, uma magia ativa, ou a própria
-                        força vital de um adversário. Ao realizar este gesto, uma nuvem de névoa escura, densa e pulsante com energia
-                        herética envolve o alvo instantaneamente, subjugando sua assinatura mágica, molecular e metafísica. <br> <br>
-
-                        O ápice absoluto desta técnica se revela ao ser focada em alvos vivos ou entidades mágicas: o feitiço deixa de ser um
-                        mero alterador biológico para atuar diretamente na essência existencial do alvo. A energia demoníaca penetra a barreira
-                        física para transmutar diretamente o espírito, a alma e o poder mágico dos alvos. Criaturas e seres vivos têm suas
-                        identidades metafísicas e suas fontes de poder totalmente corrompidas, sendo convertidos em soldados quiméricos de
-                        vanguarda que agora servem ao usuário, dotados de modificações biológicas severas, poder amplificado pela mana negativa
-                        e uma submissão espiritual absoluta de acordo com a sua nova evolução herética.
-                    </p>
-
-                    <div class="t-h4 mt-lg">Aplicações</div>
-                    <ul class="t-ui mt-sm">
-                        <li>Estagio : Indiferente</li>
-                        <li>Gasto : 20-80 de Mana</li>
-                        <li>Classe : Resistência</li>
-                        <li>Habilidade : Indiferença de Poder</li>
-                        <li>Habilidade : Regeneração Absoluta</li>
-                        <li>Poder Demoniaco : 30-80%</li>
-                        <li>Mana Negativa : Ilimitada</li>
-                        <li>Transformação em Discipulo Negro</li>
-                        
-                    </ul>
-                </div>
+        <div class="au-grid">
+          <article class="au-card au-card--feature au-reveal">
+            <div class="au-card__body">
+              <span class="au-pill">Base</span>
+              <h3 class="au-h3">Esfera Negra</h3>
+              <p class="au-body-text" style="margin-top: 1rem; max-width: none;">
+                Este feitiço cria uma esfera negra que atrai o alvo até ela.
+              </p>
+              <ul class="au-list">
+                <li>Estágio: Indiferente</li>
+                <li>Gasto: ? de Mana</li>
+              </ul>
             </div>
-            
-        </section>
+          </article>
 
-        <section class="bc-section">
-            <p class="bc-section-label">02 — Lista de Feitiços</p>
-            <h2 class="bc-section-title">Feitiços Espacial</h2>
-
-            <div class="bc-grid mt-lg">
-                <div class="bc-card bc-card--accented card-accent-violet">
-                    <span class="attr-tag tag-violet mb-sm">Exemplo</span>
-                    <h3 class="t-h3 mt-sm">Dominação de Mana</h3>
-                    <p class="t-ui mt-md">Trata-se de uma técnica suplementar de escala colossal que funde a maestria da Magia Espacial com
-                    o conceito avançado da manipulação de Mana, gerando um isolamento cúbico de dimensões variáveis que isola completamente
-                    o
-                    espaço tridimensional afetado das leis do mundo exterior. Ao manifestar o feitiço, o usuário cria uma região de
-                    vácuo mágico absoluto, assumindo a soberania incontestável sobre cada partícula de mana presente no perímetro.
-                    O mecanismo operacional desta técnica atua diretamente na negação e no desmantelamento de qualquer feitiço rival. Ao
-                    prender os oponentes dentro do cubo espacial, a mana que flui nos corpos dos inimigos e na atmosfera ao redor é
-                    instantaneamente subjugada e neutralizada pelo controle do conjurador. Isso impede que os adversários consigam conjurar
-                    ou sequer manter suas próprias magias ativas, fazendo com que suas técnicas se dissipem antes mesmo de se
-                    materializarem. <br> <br>
-                    
-                    Apenas indivíduos que possuam um volume de poder mágico que supere o do usuário, aqueles que são genuinamente
-                    amados pela mana, ou magos espaciais de nível supremo capazes de manifestar sua
-                    própria Zona de Mana interna conseguem resistir e conjurar feitiços dentro deste território de negação absoluta.
-                    O feitiço serve como uma prisão inescapável e um moedor tático, onde a própria atmosfera se recusa a obedecer a qualquer
-                    um que não seja o seu dominador supremo. É uma técnica que redefine o conceito de vantagem em batalha, provando que no
-                    Reino de Clover, controlar o espaço e a mana circundante equivale a reter o domínio absoluto sobre a própria vida
-                    daqueles que ousam desafiar o portador deste poder demoníaco.
-
-                    </p>
-
-
-                    <div class="t-h4 mt-lg">Aplicações</div>
-                    <ul class="t-ui mt-sm">
-                        <li>Estagio : 4-0</li>
-                        <li>Gasto : ? de Mana</li>
-                        <li>Classe : Resistência</li>
-                        <li>Classe (mana zone) : Disparo</li>
-                        <li>Habilidade : Teleporte</li>
-                        <li>Habilidade : Restrição</li>
-                        <li>Mana Zone : Variavel</li>
-                        <li>Poder Demoniaco : 30-80%</li>
-                        <li>Mana Negativa : Ilimitada</li>
-                        <li>Dominação de Mana</li>
-                        
-                    </ul>
-                </div>
+          <article class="au-card au-card--feature au-reveal">
+            <div class="au-card__body">
+              <span class="au-pill">Kenjutsu</span>
+              <h3 class="au-h3">Lamina Negra</h3>
+              <p class="au-body-text" style="margin-top: 1rem; max-width: none;">
+                Este feitiço encanta a espada com escuridão e envia laminas voadoras
+                em direção ao alvo.
+              </p>
+              <ul class="au-list">
+                <li>Estágio: Indiferente</li>
+                <li>Gasto: ? de Mana</li>
+              </ul>
             </div>
-        </section>
+          </article>
 
-        <section class="bc-section">
-            <p class="bc-section-label">03 — Lista de Feitiços</p>
-            <h2 class="bc-section-title">Feitiços Compostos</h2>
-
-            <div class="bc-grid mt-lg">
-                <div class="bc-card bc-card--accented card-accent-crimson">
-                    <span class="attr-tag tag-crimson mb-sm">Exemplo</span>
-                    <h3 class="t-h3 mt-sm">Templo do Rei do Mundo</h3>
-                    <p class="t-ui mt-md">Ao estender a mão aberta e expandir sua mana através da Zona de Mana, o conjurador não apenas cria
-                        uma ilusão ou uma dimensão onírica baseada em sono, mas rasga o tecido da realidade para erguer um imenso e
-                        imponente templo dimensional físico que isola completamente os alvos do mundo exterior. Uma vez que os adversários
-                        são arrastados para dentro desta fenda espacial soberana, eles se encontram sob o domínio absoluto de um território
-                        onde as leis da física, da matéria e da própria magia são ditadas unilateralmente pelo usuário.
-                        O mecanismo operacional do feitiço baseia-se na sinergia perfeita entre as duas vertentes mágicas. Enquanto a Magia
-                        Espacial atua como a âncora estrutural impenetrável que delimita o Templo e impede qualquer tentativa de fuga
-                        dimensional, a Magia de Transmutação atua como a lei divina dentro deste perímetro. Diferente do Mundo de Glamour
-                        convencional, que depende da imaginação do conjurador e da indução ao sono para ser letal, o Templo do Rei do Mundo
-                        manipula a realidade material concreta em tempo real. <br> <br>
-
-                        Em termos práticos de combate e defesa, este feitiço composto concede uma soberania tática sem paralelos. Qualquer magia
-                        hostil disparada pelos oponentes dentro do Templo pode ter sua assinatura molecular interceptada e reconfigurada antes
-                        mesmo de atingir o alvo, sendo transmutada em fluxos de cura absoluta para o usuário ou mimetizada em contra-ataques
-                        devastadores de mesma magnitude. A versatilidade de suporte e controle se expande de forma assustadora: o usuário pode
-                        aplicar o feitiço de conversão biológica em massa nas próprias estruturas do templo, erguendo um exército instantâneo de
-                        soldados quiméricos aprimorados a partir do solo transmutado. Dentro desta jurisdição herética, o usuário age como o
-                        governante supremo da matéria e do espaço, provando que desafiar o portador deste feitiço dentro de seus próprios
-                        domínios equivale a lutar contra a própria física de um universo criado unicamente para a sua vitória.
-                    </p>
-
-
-                    <div class="t-h4 mt-lg">Aplicações</div>
-                    <ul class="t-ui mt-sm">
-                        <li>Estagio : 4-0</li>
-                        <li>Gasto : ? de Mana</li>
-                        <li>Talento : Artesão Magico</li>
-                        <li>Classe : Resistência</li>
-                        <li>Classe (mana zone) : Disparo</li>
-                        <li>Habilidade : Teleporte</li>
-                        <li>Habilidade : Restrição</li>
-                        <li>Habilidade : Regeneração Absoluta</li>
-                        <li>Mana Zone : Variavel</li>
-                        <li>Poder Demoniaco : 30-80%</li>
-                        <li>Mana Negativa : Ilimitada</li>
-                        <li>Dimensão Isolada</li>
-                        
-                    </ul>
-                </div>
+          <article class="au-card au-card--feature au-reveal">
+            <div class="au-card__body">
+              <span class="au-pill">Base</span>
+              <h3 class="au-h3">Lua Negra Crescente</h3>
+              <p class="au-body-text" style="margin-top: 1rem; max-width: none;">
+                Este feitiço lança um golpe voador que divide aquilo que atinge, 
+                diferente da lamina negra o feitiço não absorve Yojutsu e explode
+                ao atingir.
+              </p>
+              <ul class="au-list">
+                <li>Estágio: Indiferente</li>
+                <li>Gasto: 20–80 de Mana</li>
+                <li>Classe: Disparo</li>
+              </ul>
             </div>
-        </section>
+          </article>
 
-        <section class="bc-section">
-            <h2 class="bc-section-title">Stats por Estágio</h2>
-            <div class="bc-card bc-card--accented card-accent-sapphire">
-                <span class="attr-tag tag-sapphire mb-sm">Padrão</span>
-                <h3 class="t-h3 mt-sm">Stats de Feitiço</h3>
-                <p class="t-ui mt-md">Uso de habilidade gasta 10 de mana<br>
-                    classe gasta 20 de mana<br>
-                    ambos os casos acima do feitiço ou isoladamente.
-                </p>
-                <div class="bc-grid-2">
-                    <div class="bc-card card-plain-table component-table-panel">
-                        <table class="bc-table"> <!-- exemplo -->
-                            <thead>
-                                <tr>
-                                    <th>Estágio</th>
-                                    <th>Alcance</th>
-                                </tr>
-                            </thead>
-        
-                            <tbody>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 8</td>
-                                    <td class="text-sapphire">Sem Alcance</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 7</td>
-                                    <td class="text-gold">5 Metros</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 6</td>
-                                    <td class="text-gold">10 Metros</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 5</td>
-                                    <td class="text-emerald">20 Metros</td>
-        
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 4</td>
-                                    <td class="text-emerald">30 Metros</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 3</td>
-                                    <td class="text-emerald">40 Metros</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 2</td>
-                                    <td class="text-emerald">60 Metros</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-        
-                    <div class="bc-card card-plain-table component-table-panel">
-                        <table class="bc-table"> <!-- buffs -->
-                            <thead>
-                                <tr>
-                                    <th>Estágio</th>
-                                    <th>Fortalecimento</th>
-                                </tr>
-                            </thead>
-        
-                            <tbody>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 8</td>
-                                    <td class="text-sapphire">Sem Buffs</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 7</td>
-                                    <td class="text-gold">30 Pontos</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 6</td>
-                                    <td class="text-gold">50 Pontos</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 5</td>
-                                    <td class="text-emerald">70 Pontos</td>
-        
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 4</td>
-                                    <td class="text-emerald">100 Pontos</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 3</td>
-                                    <td class="text-emerald">200 Pontos</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 2</td>
-                                    <td class="text-emerald">350 Pontos</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-        
-                    <div class="bc-card card-plain-table component-table-panel">
-                        <table class="bc-table"> <!-- Criações -->
-                            <thead>
-                                <tr>
-                                    <th>Estágio</th>
-                                    <th>Criações</th>
-                                </tr>
-                            </thead>
-        
-                            <tbody>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 8</td>
-                                    <td class="text-sapphire">1 Criação</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 7</td>
-                                    <td class="text-gold">3 Criações</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 6</td>
-                                    <td class="text-gold">5 Criações</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 5</td>
-                                    <td class="text-emerald">7 Criações</td>
-        
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 4</td>
-                                    <td class="text-emerald">10 Criações</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 3</td>
-                                    <td class="text-emerald">20 Criações</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 2</td>
-                                    <td class="text-emerald">35 Criações</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-        
-                    <div class="bc-card card-plain-table component-table-panel">
-                        <table class="bc-table"> <!-- Gasto de mana -->
-                            <thead>
-                                <tr>
-                                    <th>Estágio</th>
-                                    <th>Gasto de Mana</th>
-                                </tr>
-                            </thead>
-        
-                            <tbody>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 8</td>
-                                    <td class="text-sapphire">Sem Gasto</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 7</td>
-                                    <td class="text-gold">5-10 de Gasto</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 6</td>
-                                    <td class="text-gold">20 de Gasto</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 5</td>
-                                    <td class="text-emerald">50 de Gasto</td>
-        
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 4</td>
-                                    <td class="text-emerald">100 de Gasto</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 3</td>
-                                    <td class="text-emerald">150 de Gasto</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 2</td>
-                                    <td class="text-emerald">300 de Gasto</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+          <article class="au-card au-card--feature au-reveal">
+            <div class="au-card__body">
+              <span class="au-pill">Controle</span>
+              <h3 class="au-h3">Queda de Neve</h3>
+              <p class="au-body-text" style="margin-top: 1rem; max-width: none;">
+                O usuário ergue as mãos ou gesticula com a katana, fazendo com que centenas de esferas pequenas de matéria escura
+                pura se materialize ao seu redor. Essas esferas se dispersam em um raio amplo e começam a flutuar antes de despencarem
+                lentamente em direção ao solo, mimetizando uma nevasca sufocante. Qualquer elemento que entre em
+                contato direto com uma dessas esferas é engolido pela escuridão.
+              </p>
+              <ul class="au-list">
+                <li>Estágio: Indiferente</li>
+                <li>Gasto: ? de Mana</li>
+              </ul>
             </div>
-        </section>
-        
-        
-        <section class="bc-section">
-            <h2 class="bc-section-title">Stats de Classe</h2>
-            <div class="bc-grid-2">
-                <div class="bc-card bc-card--accented card-accent-gold-mid">
-                    <span class="attr-tag tag-sapphire">Tipo Defensivo</span>
-                    <h3 class="t-h3 mt-sm">Mago de Resistência</h3>
-                    <p class="t-ui mt-md">
-                        O Mago de Resistência possui magias voltadas à redução de dano, sustentação e sobrevivência prolongada.
-                        Sua
-                        especialidade é aguentar pressão, resistir a ataques intensos e continuar de pé em situações que
-                        derrubariam outros
-                        magos. É uma classe valiosa para linha de frente e proteção de aliados, funcionando como muralha viva no
-                        campo de
-                        batalha. <br>
-                    </p>
-        
-                    <div class="bc-card card-plain-table component-table-panel">
-                        <table class="bc-table">
-                            <thead>
-                                <tr>
-                                    <th>Estágio</th>
-                                    <th>Resistência</th>
-                                </tr>
-                            </thead>
-        
-                            <tbody>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 6</td>
-                                    <td class="text-sapphire">Resiste a magias no mesmo nivel</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 5</td>
-                                    <td class="text-gold">Resiste a magias 30% mais fortes</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 4</td>
-                                    <td class="text-gold">Resiste a magias 60% mais fortes</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 3</td>
-                                    <td class="text-emerald">Resiste a magias 100% mais fortes</td>
-        
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 2</td>
-                                    <td class="text-emerald">Resiste a magias 150% mais fortes</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 1</td>
-                                    <td class="text-emerald">Resiste a magias 200% mais fortes</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 0</td>
-                                    <td class="text-emerald">Resiste a magias 250% mais fortes</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    </p>
-        
-                    <div class="bc-divider">
-                        <div class="bc-divider__line"></div>
-                        <div class="bc-divider__gem"></div>
-                        <div class="bc-divider__line"></div>
-                    </div>
-                </div>
-        
-                <div class="bc-card bc-card--accented card-accent-gold-mid">
-                    <span class="attr-tag tag-crimson">Tipo Ofensivo</span>
-                    <h3 class="t-h3 mt-sm">Mago de Disparo</h3>
-                    <p class="t-ui mt-md">
-                        O Mago de Disparo é um especialista em feitiços projetados para atingir o alvo à distância, com alta
-                        velocidade,
-                        precisão e constância. Sua função é manter pressão ofensiva contínua, explorando trajetórias rápidas,
-                        ângulos difíceis e
-                        ataques difíceis de evitar. Em combate, esse tipo de mago domina o campo com ofensivas diretas, sendo
-                        ideal para
-                        eliminação rápida e perseguição. <br>
-                    </p>
-        
-                    <div class="bc-card card-plain-table component-table-panel">
-                        <table class="bc-table">
-                            <thead>
-                                <tr>
-                                    <th>Estágio</th>
-                                    <th>Velocidade</th>
-                                </tr>
-                            </thead>
-        
-                            <tbody>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 6</td>
-                                    <td class="text-sapphire">+50km/h</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 5</td>
-                                    <td class="text-gold">+100km/h</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 4</td>
-                                    <td class="text-gold">+200km/h</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 3</td>
-                                    <td class="text-emerald">+300km/h</td>
-        
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 2</td>
-                                    <td class="text-emerald">+400km/h</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 1</td>
-                                    <td class="text-emerald">+500km/h</td>
-                                </tr>
-        
-                                <tr>
-                                    <td class="text-ivory">Estágio 0</td>
-                                    <td class="text-emerald">+600km/h</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    </p>
-        
-                    <div class="bc-divider">
-                        <div class="bc-divider__line"></div>
-                        <div class="bc-divider__gem"></div>
-                        <div class="bc-divider__line"></div>
-                    </div>
-                </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="au-section--dark" aria-labelledby="compostos-title">
+      <div class="au-container">
+        <div class="au-section-header au-reveal">
+          <span class="au-section-header__eyebrow">Feitiços Mais Fortes</span>
+          <h2 id="compostos-title" class="au-section-header__title">Feitiços Compostos</h2>
+          <p class="au-section-header__body">
+            Quando duas vertentes se unem, o resultado é uma técnica de domínio total sobre matéria, espaço e realidade.
+          </p>
+        </div>
+
+        <div class="au-grid">
+          <article class="au-card--black au-reveal">
+            <div class="au-card__body">
+              <span class="au-pill">Transformação</span>
+              <h3 class="au-h3">Demonio das Trevas</h3>
+              <p class="au-body-text" style="margin-top: 1rem; max-width: none;">
+                Esta é a manifestação máxima do Yojutsu de Combate Direto. O usuário 
+                não apenas reveste seu corpo com escuridão, mas permite que o Yoryoku 
+                denso penetre sua própria estrutura. A transformação é visceral e completa,
+                espelhando o visual inedito: a pele é substituída por uma "carapaça" de matéria 
+                negra, lisa e orgânica, que parece absorver toda a luz ambiente. <br> <br>
+
+                O Yojutsu reescreve as leis físicas que governam o corpo do usuário. A densidade corporal aumenta exponencialmente,
+                conferindo uma resistência a impactos físicos e mágicos próxima à invulnerabilidade, pois a energia de impacto é
+                distribuída instantaneamente por toda a estrutura de matéria escura. A atração gravitacional é manipulada internamente,
+                permitindo que o usuário anule a gravidade para voar/deslizar em alta velocidade pelo ar ou aumente sua própria massa
+                para desferir um golpe com a força absurda. A presença do usuário causa um "efeito de maré", onde
+                magias e a luz próximos são levemente curvados em sua direção.
+
+              </p>
+              <ul class="au-list">
+                <li>Estágio: 6–1</li>
+                <li>Gasto: ? de Mana</li>
+                <li>Yojutsu de Fortalecimento (tabela de mana)</li>
+                <li>Área de Efeito : 5 metros (10 de mana)</li>
+                <li>Classe de Armamento (20 de mana)</li>
+                <li>Habilidade : Absorção de Magia (10 de mana)</li>
+                <li>Gravidade para aumentar a densidade do corpo e distorcer
+                  o espaço fazendo magia se curvar ao seu redor.
+                </li>
+              </ul>
             </div>
-        </section>
-    </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="au-section" id="stats" aria-labelledby="stats-title">
+      <div class="au-container">
+        <div class="au-section-header au-reveal">
+          <span class="au-section-header__eyebrow">Estatísticas</span>
+          <h2 id="stats-title" class="au-section-header__title">Stats por Estágio</h2>
+          <p class="au-section-header__body">
+            Os valores abaixo resumem alcance, fortalecimento, criação e gasto de mana em relação ao estágio do feitiço.
+          </p>
+        </div>
+
+        <div class="au-grid-2">
+          <article class="au-card au-reveal">
+            <div class="au-card__body">
+              <h3 class="au-h3">Alcance</h3>
+              <table class="aurora-table">
+                <thead>
+                  <tr><th>Estágio</th><th>Valor</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Estágio 8</td><td>Sem Alcance</td></tr>
+                  <tr><td>Estágio 7</td><td>5 Metros</td></tr>
+                  <tr><td>Estágio 6</td><td>10 Metros</td></tr>
+                  <tr><td>Estágio 5</td><td>20 Metros</td></tr>
+                  <tr><td>Estágio 4</td><td>30 Metros</td></tr>
+                  <tr><td>Estágio 3</td><td>40 Metros</td></tr>
+                  <tr><td>Estágio 2</td><td>60 Metros</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="au-card au-reveal">
+            <div class="au-card__body">
+              <h3 class="au-h3">Fortalecimento</h3>
+              <table class="aurora-table">
+                <thead>
+                  <tr><th>Estágio</th><th>Valor</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Estágio 8</td><td>Sem Buffs</td></tr>
+                  <tr><td>Estágio 7</td><td>30 Pontos</td></tr>
+                  <tr><td>Estágio 6</td><td>50 Pontos</td></tr>
+                  <tr><td>Estágio 5</td><td>70 Pontos</td></tr>
+                  <tr><td>Estágio 4</td><td>100 Pontos</td></tr>
+                  <tr><td>Estágio 3</td><td>200 Pontos</td></tr>
+                  <tr><td>Estágio 2</td><td>350 Pontos</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="au-card au-reveal">
+            <div class="au-card__body">
+              <h3 class="au-h3">Criações</h3>
+              <table class="aurora-table">
+                <thead>
+                  <tr><th>Estágio</th><th>Valor</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Estágio 8</td><td>1 Criação</td></tr>
+                  <tr><td>Estágio 7</td><td>3 Criações</td></tr>
+                  <tr><td>Estágio 6</td><td>5 Criações</td></tr>
+                  <tr><td>Estágio 5</td><td>7 Criações</td></tr>
+                  <tr><td>Estágio 4</td><td>10 Criações</td></tr>
+                  <tr><td>Estágio 3</td><td>20 Criações</td></tr>
+                  <tr><td>Estágio 2</td><td>35 Criações</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+          
+          <article class="au-card au-reveal">
+            <div class="au-card__body">
+              <h3 class="au-h3">Gasto de Mana</h3>
+              <table class="aurora-table">
+                <thead>
+                  <tr><th>Estágio</th><th>Valor</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Estágio 8</td><td>Sem Gasto</td></tr>
+                  <tr><td>Estágio 7</td><td>5-10 de Gasto</td></tr>
+                  <tr><td>Estágio 6</td><td>20 de Gasto</td></tr>
+                  <tr><td>Estágio 5</td><td>50 de Gasto</td></tr>
+                  <tr><td>Estágio 4</td><td>100 de Gasto</td></tr>
+                  <tr><td>Estágio 3</td><td>150 de Gasto</td></tr>
+                  <tr><td>Estágio 2</td><td>300 de Gasto</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="au-section--dark" aria-labelledby="classes-title">
+      <div class="au-container">
+        <div class="au-section-header au-reveal">
+          <span class="au-section-header__eyebrow">Classes</span>
+          <h2 id="classes-title" class="au-section-header__title">Stats de Classe</h2>
+          <p class="au-section-header__body">
+            Uma visão das especializações ofensiva e defensiva aplicadas ao sistema de feitiços.
+          </p>
+        </div>
+
+        <div class="au-grid">
+          <article class="au-card--black au-reveal">
+            <div class="au-card__body">
+              <span class="au-pill">Tipo Ofensivo</span>
+              <h3 class="au-h3">Mago de Disparo</h3>
+              <p class="au-body-text" style="margin-top: 1rem; max-width: none;">
+                O Mago de Disparo é um especialista em feitiços projetados para atingir o alvo à distância, com alta velocidade,
+                precisão e constância. Sua função é manter pressão ofensiva contínua, explorando trajetórias rápidas, ângulos difíceis e
+                ataques difíceis de evitar. Em combate, esse tipo de mago domina o campo com ofensivas diretas, sendo ideal para
+                eliminação rápida e perseguição.
+              </p>
+              <table class="aurora-table">
+                <thead>
+                  <tr><th>Estágio</th><th>Velocidade</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Estágio 6</td><td>+50km/h</td></tr>
+                  <tr><td>Estágio 5</td><td>+100km/h</td></tr>
+                  <tr><td>Estágio 4</td><td>+200km/h</td></tr>
+                  <tr><td>Estágio 3</td><td>+300km/h</td></tr>
+                  <tr><td>Estágio 2</td><td>+400km/h</td></tr>
+                  <tr><td>Estágio 1</td><td>+500km/h</td></tr>
+                  <tr><td>Estágio 0</td><td>+600km/h</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="au-card--black au-reveal">
+            <div class="au-card__body">
+              <span class="au-pill">Tipo Ofensivo</span>
+              <h3 class="au-h3">Mago de Armamento</h3>
+              <p class="au-body-text" style="margin-top: 1rem; max-width: none;">
+                O Mago de Armamento canalisa sru Yojutsu em reforço fisico, armas ou técnicas de impacto,
+                transformando sua ofensiva em força concentrada. Em vez de depender apenas de projéteis
+                ou feitiços distantes, ele usa a Yojutsu como extensão do próprio corpo ou equipamento. É 
+                uma classe feita para confronto direto, agressão constante e dano elevado em curta ou 
+                média distância.
+              </p>
+              <table class="aurora-table">
+                <thead>
+                  <tr><th>Estágio</th><th>Poder Magico</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Estágio 6</td><td>+1.000 de Yoryoku</td></tr>
+                  <tr><td>Estágio 5</td><td>+2.500 de Yoryoku</td></tr>
+                  <tr><td>Estágio 4</td><td>+4.000 de Yoryoku</td></tr>
+                  <tr><td>Estágio 3</td><td>+6.000 de Yoryoku</td></tr>
+                  <tr><td>Estágio 2</td><td>+10.000 de Yoryoku</td></tr>
+                  <tr><td>Estágio 1</td><td>+20.000 de Yoryoku</td></tr>
+                  <tr><td>Estágio 0</td><td>+30.000 de Yoryoku</td></tr>  
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="public/js/aurora.js"></script>
 </body>
 </html>

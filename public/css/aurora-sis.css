@@ -1,0 +1,70 @@
+  .au-page-shell {
+      background: linear-gradient(180deg, rgba(242, 201, 76, 0.06), transparent 30%);
+  }
+
+  .au-pill {
+      display: inline-block;
+      padding: 0.35rem 0.75rem;
+      border: 1px solid rgba(242, 201, 76, 0.35);
+      color: var(--au-gold);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+  }
+
+  .au-list {
+      list-style: none;
+      display: grid;
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding-left: 0;
+  }
+
+  .au-list li {
+      color: var(--au-light-gray);
+      font-size: 13px;
+      line-height: 1.6;
+      padding-left: 1rem;
+      position: relative;
+  }
+
+  .au-list li::before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: var(--au-gold);
+  }
+
+  .aurora-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+  }
+
+  .aurora-table th,
+  .aurora-table td {
+      padding: 0.8rem 1rem;
+      border-bottom: 1px solid var(--au-divider);
+      text-align: left;
+      font-size: 13px;
+  }
+
+  .aurora-table th {
+      color: var(--au-gold);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-size: 10px;
+  }
+
+  .aurora-table td:last-child {
+      color: var(--au-light-gray);
+  }
+
+  .aurora-table tr:last-child td {
+      border-bottom: none;
+  }
+
+  .au-card--feature {
+      min-height: 100%;
+  }
